@@ -1,0 +1,45 @@
+.productFeatures {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 100px;
+}
+
+.featurePara {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.productHeadPara {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 2060px) {
+  .featurePara {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 1748px) {
+  .productFeatures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-aspect-ratio: 187/100) {
+  .fluidContainerApp {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-aspect-ratio: 2056/950) {
+  .fluidContainerApp {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+
+

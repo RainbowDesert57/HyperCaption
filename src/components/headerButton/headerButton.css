@@ -1,0 +1,43 @@
+.headerButton {
+  border: none;
+  color: white;
+  font-size: 0.5rem;
+  margin: 15px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 1rem;
+  background-color: #6C2EFF;
+  transition: all 0.3s ease;
+}
+
+.headerButton:hover {
+  cursor: pointer;
+}
+
+.headerButton:active {
+  scale: 0.95;
+}
+
+@media (max-width: 1920px) {
+  .headerButton {
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1255px) {
+  .headerButton {
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
