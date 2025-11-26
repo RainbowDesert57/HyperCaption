@@ -1,7 +1,5 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useRef } from 'react';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/header.tsx'
 import TextPressure from './components/reactbits/TextPressure/TextPressure.tsx';
