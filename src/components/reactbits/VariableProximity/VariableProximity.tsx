@@ -1,4 +1,5 @@
-import { forwardRef, useMemo, useRef, useEffect, MutableRefObject, RefObject, HTMLAttributes } from 'react';
+import { forwardRef, useMemo, useRef, useEffect} from 'react';
+import type { RefObject, HTMLAttributes } from 'react';
 import { motion } from 'motion/react';
 import './VariableProximity.css';
 
@@ -16,7 +17,7 @@ function useAnimationFrame(callback: Callback) {
   }, [callback]);
 }
 
-function useMousePositionRef(containerRef: RefObject<HTMLElement>) {
+function useMousePositionRef(containerRef: RefObject<HTMLElement | null>) {
   const positionRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -50,7 +51,7 @@ interface VariableProximityProps extends HTMLAttributes<HTMLSpanElement> {
   label: string;
   fromFontVariationSettings: string;
   toFontVariationSettings: string;
-  containerRef: RefObject<HTMLElement>;
+  containerRef: RefObject<HTMLElement | null>;
   radius?: number;
   falloff?: 'linear' | 'exponential' | 'gaussian';
   className?: string;
